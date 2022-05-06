@@ -1,15 +1,17 @@
-import React from "react";
+/* eslint no-eval: 0 */
+import React,{useState} from "react";
+
 import "./App.css";
 
-function app(){
-let [result,setResult]=React.useState("");
+function App(){
+let [result,setResult]=useState("");
 const handleClick=(e)=>{
   setResult(result.concat(e.target.name));
 }
 
-let [fresult,setFResult]=React.useState("");
-let [sresult,setSResult]=React.useState("");
-let [tresult,setTResult]=React.useState("");
+let [fresult,setFResult]=useState("");
+let [sresult,setSResult]=useState("");
+let [tresult,setTResult]=useState("");
 let ans="";
 function clear(){
   setTResult(sresult);
@@ -84,4 +86,4 @@ function calculate(){
   );
 }
 
-export default app;
+export default App;

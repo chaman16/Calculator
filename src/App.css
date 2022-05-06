@@ -52,7 +52,7 @@ input[type="text"]{
   top: 200px;
   height: 68px;
   width: 400px;
-  background-color: #262834;
+  background: linear-gradient(145.27deg, #2E2C2C -4.62%, #0B0A0A 64.58%);
   border: 0px;
   color: white;
   text-align: right;
