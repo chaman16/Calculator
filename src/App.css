@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* '*' {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.container{
+position: absolute;
+width: 411px;
+height: 823px;
+left: 50px;
+top: 50px;
+
+background: linear-gradient(145.27deg, #2E2C2C -4.62%, #0B0A0A 64.58%);
+
+
+}
+
+.keyPad{
+
+
+  position: absolute;
+  width: 411px;
+  height: 532px;
+  left: 0px;
+  top: 291px;
+
+  background: #F0F0F3;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.keys{
+  position: absolute;
+  width: 360px;
+  height: 450px;
+  left: 25px;
+
+  top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(60px,auto);
+}
+input[type="text"]{
+  position: absolute;
+  top: 200px;
+  height: 68px;
+  width: 400px;
+  background-color: #262834;
+  border: 0px;
   color: white;
+  text-align: right;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  color: rgba(114, 138, 183, 0.65);
+text-align: right;
+position: absolute;
+right: 10px;
+top: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondHeading{
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: bold;
+  color: #F2F2F4;
+  opacity: 0.2;
+  font-size: 80px;
+  border: 0px;
+  margin: 0px;
+  position: absolute;
+  right: 10px;
+  top: 47px;
+}
+
+.thirdHeading{
+  color: #F2F2F4;
+  opacity: 0.2;
+text-align: right;
+position: absolute;
+border: 0px;
+margin: 0px;
+right: 10px;
+top: 10px;
+}
+
+.clear{
+  font-family:"Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+
+
+  color: #898989;
+}
+
+.sign{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #898989;
+}
+.arthmetic{
+  color: #745FF2;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+
+}
+
+#zero{
+  grid-column:1/3;
+  grid-row:5;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+
+  text-align: center;
+
+  color: #728AB7;
+
+}
+
+.number{
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 53px;
+align-items: center;
+text-align: center;
+
+color: #728AB7;
+
+}
+
+button{
+  background: #F0F0F3;
+box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+border-radius: 16px;
+margin:6px;
+border:none;
+cursor: pointer;
+}
+.rectangle{
+  position: absolute;
+  width: 411px;
+  height: 50px;
+  left: 0px;
+  top: 5px;
+
+
+}
+.rectangle1{
+  position: absolute;
+  left: 35.52%;
+  right: 35.77%;
+  top: 38.75%;
+  bottom: 60.52%;
+background: #EEEEEE;
+box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1px 1px 2px rgba(174, 174, 192, 0.2);
+border-radius: 12px;
+}
+.rectangle2{
+  position: absolute;
+  left: 35.28%;
+  right: 35.52%;
+  top: 38.63%;
+  bottom: 60.4%;
+  background: #F0F0F3;
+  box-shadow: -1px -1px 3px #FFFFFF, 1.5px 1.5px 3px rgba(174, 174, 192, 0.4);
+  border-radius: 12px;
+
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active{
+  outline: none;
+}
+
+#result{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  background: #2DD3C5;
+box-shadow: -10px -10px 24px #FFFFFF, 10px 10px 24px rgba(174, 174, 192, 0.52);
 }
